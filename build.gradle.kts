@@ -2,8 +2,8 @@ plugins {
     java
 }
 
-group = "com.github.leroyguillaume"
-version = "1.5.3"
+group = "com.github.parcellab"
+version = "1.5.4"
 
 repositories {
     mavenCentral()
