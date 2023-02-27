@@ -22,7 +22,6 @@ import org.keycloak.credential.hash.PasswordHashProvider;
 import org.keycloak.credential.hash.PasswordHashProviderFactory;
 import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.KeycloakSessionFactory;
-import org.keycloak.provider.ProviderFactory;
 
 /**
  * @author <a href="mailto:pro.guillaume.leroy@gmail.com">Guillaume Leroy</a>
