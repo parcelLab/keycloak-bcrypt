@@ -37,7 +37,7 @@ public class BCryptPasswordHashProvider implements PasswordHashProvider {
     @Override
     public String encode(final String rawPassword, final int iterations) {
         final int cost = iterations == -1 ? defaultIterations : iterations;
-        return BCrypt.with(BCrypt.Version.VERSION_2A).hashToString(cost, rawPassword.toCharArray());
+        return BCrypt.with(BCrypt.Version.VERSION_2B).hashToString(cost, rawPassword.toCharArray());
     }
 
     @Override
