@@ -16,14 +16,11 @@ jobs:
         run: ./gradlew jar
       - name: Create release
         id: create_release
-        uses: actions/create-release@v1
+        uses: ncipollo/release-action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN_OPEN_SOURCE }}
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          draft: false
-          prerelease: false
+          artifacts: "build/libs/*.jars"
       - name: Upload jar
         uses: actions/upload-release-asset@v1
         env:
