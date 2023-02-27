@@ -20,7 +20,7 @@ jobs:
         with:
           files: ./build/libs/keycloak-bcrypt-${{ github.ref_name }}.jar
         env:
-          GITHUB_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN_OPEN_SOURCE }}
+          GITHUB_TOKEN: ${{ secrets.DEPLOYMENT }}
 
       # - name: Create release
       #   id: create_release
