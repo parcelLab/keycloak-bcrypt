@@ -28,8 +28,8 @@ class BCryptPasswordHashProviderTest {
     }
 
     @Test
-    @DisplayName("Should verify the password successfully.")
-    void shouldVerifyTheHashSuccessfully() {
+    @DisplayName("Should verify the password hashes successfully.")
+    void shouldVerifyPasswordHashesSuccessfully() {
         String rawPassword = "jqy*VFN.rkn5xcu@ape";
         String hashedPassword = provider.encode(rawPassword, iterations);
         String rawPasswordAsSHA256String = Hashing.sha256().hashString(rawPassword, StandardCharsets.UTF_8).toString();
